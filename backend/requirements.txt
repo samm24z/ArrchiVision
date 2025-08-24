@@ -1,0 +1,27 @@
+# Core web & utils
+fastapi==0.112.0
+uvicorn[standard]==0.30.3
+pydantic==2.8.2
+python-multipart==0.0.9
+Pillow==10.4.0
+
+# Diffusers pipeline (sketch -> render)
+diffusers==0.30.0
+transformers==4.43.3
+accelerate==0.33.0
+safetensors==0.4.4
+controlnet-aux==0.0.8
+
+# Torch (CPU by default; replace with CUDA build if you have GPU)
+# For CPU-only:
+torch==2.3.1
+# If you have NVIDIA GPU, uninstall the above and install a matching CUDA wheel from https://pytorch.org/get-started/locally/
+# Example: pip install --index-url https://download.pytorch.org/whl/cu121 torch==2.3.1+cu121 torchvision==0.18.1+cu121
+
+# 3D conversion helpers
+trimesh==4.4.9
+pygltflib==1.16.11
+numpy==1.26.4
+
+# Optional speedups (GPU only; safe to skip)
+# xformers==0.0.27.post2
